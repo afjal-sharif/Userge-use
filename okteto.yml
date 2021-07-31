@@ -2,3 +2,5 @@ deploy:
   - okteto build -t userge
 forward:
 - 8080:8080
+deploy:
+- kubectl apply -k 
