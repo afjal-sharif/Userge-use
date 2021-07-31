@@ -1,9 +1,2 @@
-build:
-  context: .
-  dockerfile: Dockerfile
-  target: prod
-sync:
-- .:/usr/src/app
 forward:
 - 8080:8080
-persistentVolume: {}
