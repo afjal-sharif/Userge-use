@@ -1,6 +1,10 @@
 name: Userge
 image: okteto/dev:latest
 command: bash
+build:
+  context: .
+  dockerfile: Dockerfile
+  target: prod
 sync:
 - .:/usr/src/app
 forward:
