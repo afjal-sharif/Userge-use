@@ -1,6 +1,3 @@
-name: Userge
-image: okteto/dev:latest
-command: bash
 build:
   context: .
   dockerfile: Dockerfile
