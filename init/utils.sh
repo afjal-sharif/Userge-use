@@ -66,18 +66,6 @@ addHeroku() {
     git remote add heroku $HEROKU_GIT_URL
 }
 
-addUpstream() {
-    git remote add $UPSTREAM_REMOTE ${UPSTREAM_REPO%.git}.git
-}
-
-updateUpstream() {
-    git remote rm $UPSTREAM_REMOTE && addUpstream
-}
-
-fetchUpstream() {
-    git fetch $UPSTREAM_REMOTE &> /dev/null
-}
-
 fetchBranches() {
     local r_bs l_bs
     r_bs=$(grep -oP '(?<=refs/heads/)\w+' < <(git ls-remote --heads $UPSTREAM_REMOTE))
