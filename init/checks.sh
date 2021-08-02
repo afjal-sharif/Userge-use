@@ -179,7 +179,6 @@ assertEnvironment() {
     _checkTriggers
     _checkPaths
     _checkBins
-    _checkUpstreamRepo
     _checkUnoffPlugins
     _checkCustomPlugins
     _flushMessages
