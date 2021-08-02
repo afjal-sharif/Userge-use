@@ -50,7 +50,6 @@ _checkDefaultVars() {
         [WORKERS]=0
         [PREFERRED_LANGUAGE]="en"
         [DOWN_PATH]="downloads"
-        [UPSTREAM_REMOTE]="upstream"
         [LOAD_UNOFFICIAL_PLUGINS]=false
         [ASSERT_SINGLE_INSTANCE]=false
         [CUSTOM_PLUGINS_REPO]=""
